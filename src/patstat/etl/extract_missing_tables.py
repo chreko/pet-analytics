@@ -1,7 +1,7 @@
 """Extract missing PATSTAT tables for enhanced PET patent analysis.
 
-This script extracts additional data from PATSTAT SPRING25 schema to address
-critical gaps identified in MISSING_DATA_ANALYSIS.md:
+This script extracts additional data from PATSTAT SPRING25 schema based on the
+following priorities:
 
 Priority 1: Geographic coverage (18.5% → 90-95%)
     - PERSON_INV_CTRY, PERSON_APP_CTRY, PERSON
