@@ -1,0 +1,63 @@
+# Python artifacts
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv
+Lib/
+Scripts/
+pyvenv.cfg
+.python-version
+
+# Secrets and credentials (CRITICAL - never commit database credentials!)
+.env
+secrets.yaml
+secrets.json
+*.dsn
+db_config.py
+config_local.py
+
+# PATSTAT raw data (large proprietary files)
+src/patstat/data/raw/
+**/raw/*.parquet
+**/raw/*.csv
+
+# Interim/temporary processing files (can be regenerated)
+src/patstat/data/interim/
+**/interim/*.parquet
+
+# Large gold datasets (keep CSVs, ignore large binary files)
+src/patstat/data/gold/*.parquet
+
+# Logs
+*.log
+*.log.*
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# OS files
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build artifacts
+build/
+dist/
+*.egg-info/
+
+# Keep these (explicit whitelist)
+!src/patstat/data/gold/*.csv
+!src/patstat/data/gold/README.md
